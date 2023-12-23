@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* navbar section start */
+.navbar{
+    background:#f9f9f9;
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+.navbar img{
+    width: 120px;
+    height: 50px;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+.navbar form button{
+    /* background: #ffa500; */
+    color: white;
+    border: none;
+}
+/* navbar section end */
+
+/* home section start */
+.home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.changecontent::after{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0% {content:'India';}
+    10% {content:'Paris';}
+    20% {content:'Germany';}
+    30% {content:'Newyork';}
+    40% {content:'Japan';}
+    50% {content:'Mauritius';}
+    60% {content:'Switzerland';}
+    70% {content:'United States';}
+    80% {content:'Honkong';}
+    90% {content:'China';}
+    100% {content:'France';}
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+}
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+}
+}
+/* home section end */
+
+/* book section start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+     padding: 10px;
+     color: black;
+     border-radius: 10px;
+     font-size: 15px;
+     box-shadow: 0px 5px 5px -6px black;
+     outline: none;
+     border: none;
+    }
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+    resize: none;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    border: none;
+
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/* book section end */
+
+/* packages section start */
+.packages{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 5px;
+}
+.packages .card .img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.star i{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    background: #ffa500;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* package section end */
+
+/* services section start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 5px;
+}
+.services .card i{
+    font-size: 80px;
+    margin-top: 25px;
+    color: #ffa500;
+    text-align: center;
+}
+.services .card-body h5{
+    font-weight: 600;
+}
+.services .card-body{
+    text-align: center;
+}
+/* services section end */
+
+/* gallary section start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.gallary .card img{
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* gallary section end */
+
+/* about section start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#abt-button{
+    width: 150px;
+    height: 38px;
+    color: white;
+    background: #ffa500;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#abt-button:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* about section end */
+
+/* footer section start */
+#footer{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 1px 1px black;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 20px;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* footer section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
